@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary px-3">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <!--infine cliccando sul logo di netflix si ritorna alla Home-->
+          <a class="navbar-brand me-3" href="./home.html">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
+              alt="logo"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">TV Show</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">My List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <img src="./Netflix-assets/search (1).svg" alt="search" width="24" />
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/kids_icon.png"
+              alt="kids"
+              width="30"
+              height="30"
+            />
+          </a>
+          <img src="./Netflix-assets/bell-fill.svg" alt="bell" width="24" />
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/avatar.png"
+              alt="avatar"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container my-5">
+      <h2>Account</h2>
+      <div class="row border-bottom py-3 align-items-center">
+        <div class="col-4 col-md-4 fw-bold text-secondary">
+          MEMBERSHIP & BILLING
+        </div>
+        <div class="col-4 col-md-4">
+          <p class="mb-1 fw-bold">student@strive.school</p>
+          <p class="mb-1 text-secondary">Password: ********</p>
+          <p class="mb-1 text-secondary">Phone: 321 044 1279</p>
+          <p class="fw-bold">
+            <img src="./Netflix-assets/paypal.svg" alt="PayPal" width="20" />
+            admin@strive.school
+          </p>
+        </div>
+        <div class="col-4 col-md-4 text-end">
+          <a href="#" class="d-block text-decoration-none"
+            >Change account email</a
+          >
+          <a href="#" class="d-block text-decoration-none">Change password</a>
+          <a href="#" class="d-block text-decoration-none"
+            >Change phone number</a
+          >
+          <a href="#" class="d-block text-decoration-none"
+            >Update payment info</a
+          >
+          <a href="#" class="d-block text-decoration-none">Billing details</a>
+          <a href="#" class="d-block text-decoration-none"
+            >Redeem gift card or promo code</a
+          >
+          <a href="#" class="d-block text-decoration-none"
+            >Where to buy gift cards</a
+          >
+        </div>
+        <div class="col-12 mt-3">
+          <button class="btn btn-outline-dark btn-sm">Cancel Membership</button>
+        </div>
+      </div>
+      <div class="row border-bottom py-3 align-items-center">
+        <div class="col-4 col-md-4 fw-bold text-secondary">PLAN DETAILS</div>
+        <div class="col-4 col-md-4">
+          <p class="mb-0 fw-bold">
+            Premium <span class="badge bg-dark">ULTRA HD</span>
+          </p>
+        </div>
+        <div class="col-4 col-md-4 text-end">
+          <a href="#" class="text-decoration-none">Change plan</a>
+        </div>
+      </div>
+      <div class="row border-bottom py-3">
+        <div class="col-6 col-md-4 fw-bold text-secondary">SETTINGS</div>
+        <div class="col-6 col-md-8">
+          <a href="#" class="d-block text-decoration-none">Parental controls</a>
+          <a href="#" class="d-block text-decoration-none"
+            >Test participation</a
+          >
+          <a href="#" class="d-block text-decoration-none"
+            >Manage download devices</a
+          >
+          <a href="#" class="d-block text-decoration-none">Activate a device</a>
+          <a href="#" class="d-block text-decoration-none"
+            >Recent device streaming activity</a
+          >
+          <a href="#" class="d-block text-decoration-none"
+            >Sign out of all devices</a
+          >
+        </div>
+      </div>
+      <div class="row py-3 align-items-center">
+        <div class="col-12 col-md-4 fw-bold text-secondary">MY PROFILE</div>
+        <div class="col-4 col-md-4 d-flex align-items-center w-25">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/avatar.png"
+            alt="Profile"
+            class="me-2 w-25"
+          />
+          <span class="fw-bold">Strive Student</span>
+        </div>
+        <div class="col-4 col-md-4 text-end">
+          <a href="#" class="d-block text-decoration-none">Manage profiles</a>
+          <a href="#" class="d-block text-decoration-none">Add profile email</a>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-4 col-md-8 mt-3">
+          <a href="#" class="d-block text-decoration-none">Language</a>
+          <a href="#" class="d-block text-decoration-none">Playback settings</a>
+          <a href="#" class="d-block text-decoration-none"
+            >Subtitle appearance</a
+          >
+          <a href="#" class="d-block text-decoration-none">Viewing activity</a>
+          <a href="#" class="d-block text-decoration-none">Ratings</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</html>

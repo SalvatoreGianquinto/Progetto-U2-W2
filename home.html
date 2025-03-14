@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
+  </head>
+  <body class="ms-4 text-light bg-primary">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary px-0">
+        <div class="container-fluid px-0">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand me-3" href="#">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
+                alt="logo"
+                width="100"
+              />
+            </a>
+            <button
+              class="navbar-toggler border-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">TV Show</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">My List</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <img src="./Netflix-assets/search (1).svg" alt="search" />
+            <a class="navbar-brand m-0" href="#">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/kids_icon.png"
+                alt="kids"
+                width="30"
+                height="30"
+              />
+            </a>
+            <img src="./Netflix-assets/bell-fill.svg" alt="bell" />
+            <a class="navbar-brand" href="./profile.html">
+              <!--Cliccando l'avatar nella pagina browser si passa alla page dei profile-->
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/avatar.png"
+                alt="avatar"
+                width="30"
+                height="30"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section class="d-flex justify-content-start align-items-center">
+        <h1 class="">TV Show</h1>
+        <div class="container m-0">
+          <div class="dropdown">
+            <button
+              class="btn btn-danger dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categorie Film
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Azione</a></li>
+              <li><a class="dropdown-item" href="#">Commedia</a></li>
+              <li><a class="dropdown-item" href="#">Drammatico</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+              <li><a class="dropdown-item" href="#">Fantascienza</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="container-fluid mt-3 p-0">
+        <h4>Trending Now</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media0.webp"
+                class="img-fluid rounded"
+                alt="Sherlock"
+              />
+              <div class="film-popup">
+                <h6>Sherlock</h6>
+                <p>
+                  La serie vede come protagonista il detective Sherlock Holmes,
+                  affiancato dal suo futuro assistente, il dottor John Watson.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media1.jpg"
+                class="img-fluid rounded"
+                alt="American Factory"
+              />
+              <div class="film-popup">
+                <h6>American Factory</h6>
+                <p>
+                  Made in USA - Una fabbrica in Ohio (American Factory) è un
+                  film documentario del 2019 diretto da Steven Bognar e Julia
+                  Reichert.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media4.jpg"
+                class="img-fluid rounded"
+                alt="cuba"
+              />
+              <div class="film-popup">
+                <h6>Cuba and the Cameraman</h6>
+                <p>
+                  Il film si concentra su Cuba e sul suo leader, Fidel Castro,
+                  dal 1975 al 2016 soffermandosi maggiormenti sulle vite dei
+                  cittadini qualunque
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media10.jpg"
+                class="img-fluid rounded"
+                alt="spy"
+              />
+              <div class="film-popup">
+                <h6>Spy</h6>
+                <p>
+                  The Spy è una miniserie di Netflix basata sul libro L'espion
+                  qui venait d'Israël (in Inglese: The Spy From Israel) ispirata
+                  dalla vera storia di Eli Cohen
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media11.jpg"
+                class="img-fluid rounded"
+                alt="The college"
+              />
+              <div class="film-popup">
+                <h6>Operation Varsity Blues: The College Admissions Scandal</h6>
+                <p>
+                  E'un documentario americano sullo scandalo di corruzione per
+                  le ammissioni al college del 2019.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media12.jpg"
+                class="img-fluid rounded"
+                alt="tribes of europe"
+              />
+              <div class="film-popup">
+                <h6>Tribes Of Europe</h6>
+                <p>
+                  Nel 2029, un misterioso black out mondiale unito a varie
+                  tensioni geopolitiche ha causato la frammentazione del
+                  continente in migliaia di micro-stati in lotta per il dominio
+                  del continente europeo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3 p-0">
+        <h4>Watch It Again</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media21.webp"
+                class="img-fluid rounded"
+                alt="vikings"
+              />
+              <div class="film-popup">
+                <h6>Vikings</h6>
+                <p>
+                  La serie, ambientata nel IX secolo principalmente tra la
+                  Scandinavia e le isole britanniche, racconta in chiave
+                  romanzata le avventure del guerriero vichingo Ragnarr Loðbrók,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media20.jpg"
+                class="img-fluid rounded"
+                alt="bill gates"
+              />
+              <div class="film-popup">
+                <h6>Inside Bill's Brain</h6>
+                <p>
+                  La serie esplora la mente e le motivazioni di Bill Gates ,
+                  co-fondatore ed ex CEO di Microsoft e fondatore della Bill and
+                  Melinda Gates Foundation , insieme alla sua allora moglie.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media25.webp"
+                class="img-fluid rounded"
+                alt="modern family"
+              />
+              <div class="film-popup">
+                <h6>Modern Family</h6>
+                <p>
+                  La sitcom, realizzata con la tecnica del falso documentario,
+                  racconta le vicende di una famiglia allargata composta da tre
+                  nuclei legati tra loro che non corrisponde ai canoni
+                  tradizionali.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media27.jpg"
+                class="img-fluid rounded"
+                alt="history 101"
+              />
+              <div class="film-popup">
+                <h6>History 101</h6>
+                <p>
+                  La premessa ruota attorno a mini-lezioni di storia costituite
+                  da filmati d'archivio, fatti e grafici su vari argomenti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media28.jpg"
+                class="img-fluid rounded"
+                alt="peaky blinders"
+              />
+              <div class="film-popup">
+                <h6>Peaky Blinders</h6>
+                <p>
+                  Peaky Blinders è una serie televisiva britannica, creata da
+                  Steven Knight e ambientata a Birmingham tra il 1919 e il 1934.
+                  La banda immaginaria è vagamente basata su una vera banda di
+                  giovani urbani con lo stesso nome che era attiva in città dal
+                  1890 al 1920.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media29.jpg"
+                class="img-fluid rounded"
+                alt="octpus"
+              />
+              <div class="film-popup">
+                <h6>My octpus teacher</h6>
+                <p>
+                  My Octopus Teacher documenta un anno trascorso dal regista
+                  Craig Foster a stringere una relazione con un comune polpo
+                  selvatico in una foresta di alghe sudafricane.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3 p-0">
+        <h4>New Releases</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media15.jpg"
+                class="img-fluid rounded"
+                alt="explained"
+              />
+              <div class="film-popup">
+                <h6>Explained</h6>
+                <p>
+                  Explained è una serie televisiva documentaristica americanasul
+                  servizio di streaming Netflix
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media16.webp"
+                class="img-fluid rounded"
+                alt="rick and morty"
+              />
+              <div class="film-popup">
+                <h6>Rick and Morty</h6>
+                <p>
+                  Rick and Morty è una serie animata statunitense creata da
+                  Justin Roiland e Dan Harmon, per Adult Swim. La serie,
+                  considerata di genere cosmic horror, ha le sue origini in una
+                  parodia animata di Ritorno al futuro, creata da Roiland per il
+                  festival dei cortometraggi Channel 101
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media17.jpg"
+                class="img-fluid rounded"
+                alt="the white helmets"
+              />
+              <div class="film-popup">
+                <h6>The white Helmets</h6>
+                <p>
+                  Il film segue le operazioni quotidiane di un gruppo di
+                  soccorritori volontari della Protezione Civile Siriana, noti
+                  anche come Caschi Bianchi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media18.jpg"
+                class="img-fluid rounded"
+                alt="spycraft"
+              />
+              <div class="film-popup">
+                <h6>Spycraft</h6>
+                <p>
+                  Spycraft è una docuserie americana del 2021 creata per
+                  Netflix. Ogni episodio descrive in dettaglio un metodo diverso
+                  utilizzato dai paesi nell'arte dello spionaggio dalla prima
+                  guerra mondiale ai giorni nostri
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media19.webp"
+                class="img-fluid rounded"
+                alt="better call saul"
+              />
+              <div class="film-popup">
+                <h6>Better Call Saul</h6>
+                <p>
+                  È lo spin-off e, allo stesso tempo, prequel e sequel della
+                  serie Breaking Bad, incentrato sull'avvocato Jimmy McGill /
+                  Saul Goodman, interpretato da Bob Odenkirk.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="film">
+              <img
+                src="./Netflix-assets/Netflix-assets/assets/media/media30.jpg"
+                class="img-fluid rounded"
+                alt="magic for humans"
+              />
+              <div class="film-popup">
+                <h6>Magic for humans</h6>
+                <p>
+                  Magic for Humans è un reality show televisivo americano di
+                  magia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-5">
+      <div class="container">
+        <section class="row justify-content-center text-center text-md-start">
+          <div class="col-12 mb-3">
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3"
+            >
+              <img src="./Netflix-assets/facebook.svg" alt="facebook" />
+              <img src="./Netflix-assets/instagram.svg" alt="instagram" />
+              <img src="./Netflix-assets/twitter.svg" alt="twitter" />
+              <img src="./Netflix-assets/youtube.svg" alt="youtube" />
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Audio and Subtitles</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Media Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Audio Description</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Investor Relations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Legal Notice</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">Jobs</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Cookie Preferences</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Gift Cards</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Terms of Use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Corporate Information</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-light">Service Code</button>
+          <p class="mt-2 text-secondary">
+            &copy; 1997-2019 Netflix, Inc. (i-00df0tcd2fdfe0c0e)
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

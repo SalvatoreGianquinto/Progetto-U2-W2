@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
+  </head>
+  <body class="bg-primary text-light">
+    <header class="w-50">
+      <img
+        src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
+        alt="logo netflix"
+        class="w-25"
+      />
+    </header>
+    <main>
+      <div class="text-center">
+        <h1 class="border border-2 border-top-0 border-start-0 border-end-0">
+          Edit Profile
+        </h1>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="row d-flex w-100">
+          <!-- Avatar -->
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/avatar.png"
+              alt="avatar"
+              class="w-50"
+            />
+          </div>
+
+          <!-- Form -->
+          <div class="col-12 col-md-8">
+            <p class="border border-2 p-2 bg-body-secondary text-dark px-3">
+              Strive Student
+            </p>
+
+            <!-- Dropdown Lingua -->
+            <div class="dropdown">
+              <button
+                class="btn btn-dark border border-white dropdown-toggle mb-3 w-md-auto"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Seleziona Lingua
+              </button>
+              <ul class="dropdown-menu bg-black border border-white">
+                <li>
+                  <a class="dropdown-item text-white" href="#">Italiano</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">English</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Français</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Deutsch</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Español</a>
+                </li>
+              </ul>
+            </div>
+
+            <p class="fs-3 mb-3">Maturity Settings:</p>
+            <span class="border border-2 p-2 d-block w-100 w-md-auto">
+              ALL MATURITY RATINGS
+            </span>
+            <p class="my-4">
+              Show titles of <strong>all maturity ratings</strong> for this
+              profile.
+            </p>
+            <!--Cliccando "EDIT" nella pagina browser si passa ai SETTING-->
+            <a href="./settings.html">
+              <span
+                class="text-secondary border border-2 border-secondary px-5 py-2 d-block d-md-inline-block"
+              >
+                EDIT
+              </span>
+            </a>
+
+            <!-- Autoplay Controls -->
+            <p class="fs-3 my-3">Autoplay controls</p>
+            <div class="d-flex flex-column gap-3">
+              <div class="form-check d-flex align-items-center">
+                <input
+                  class="form-check-input bg-transparent border border-light p-3"
+                  type="checkbox"
+                  checked
+                  id="autoplayNext"
+                />
+                <label class="form-check-label ms-3" for="autoplayNext">
+                  Autoplay next episode in a series on all devices.
+                </label>
+              </div>
+
+              <div class="form-check d-flex align-items-center">
+                <input
+                  class="form-check-input bg-transparent border border-light p-3"
+                  type="checkbox"
+                  checked
+                  id="autoplayPreviews"
+                />
+                <label class="form-check-label ms-3" for="autoplayPreviews">
+                  Autoplay previews while browsing on all devices.
+                </label>
+              </div>
+
+              <!-- Bottoni Finali -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div
+        class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4"
+      >
+        <p class="border border-1 border-light px-5 py-2 text-center">SAVE</p>
+        <p
+          class="bg-primary text-secondary border border-2 border-secondary px-5 py-2 text-center"
+        >
+          CANCEL
+        </p>
+        <p
+          class="bg-primary text-secondary border border-2 border-secondary px-5 py-2 text-center"
+        >
+          DELETE PROFILE
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
